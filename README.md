@@ -1,6 +1,6 @@
 # Data Analysis Using Decision Tree from scratch
 ## Dataset1 : wine data 
-Data exploration (overview) 
+Data exploration (overview) <br />
  •	Data : 1023 instances (train), 244 instances (test) <br />
  •	Phrase : top phrase “going to a house party and…” <br />
  •	Target : 5 classes (3, 4, 5, 6, 7, 8) <br />
