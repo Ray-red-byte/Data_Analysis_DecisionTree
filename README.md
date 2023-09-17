@@ -7,11 +7,10 @@ Data exploration (overview)
  •	The count of each features are not the same 
 1.	Dataset1 may contain duplicated data → cause bias, waste of time 
 2.	Dataset1 may contain missing value   → cause bias 
-  ![alt text](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/e09907b2-2998-4d01-9a32-fd7928be9509)
-
-▲ Fig.1 Summary of continuous features (Raw train) 
+  ![alt text](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/56d7f234-f618-4c21-a7fb-f8ac4a79576b)
+  ▲ Fig.1 Summary of continuous features (Raw train) 
   
-▲ Fig.2 Summary of continuous features (Raw test) 
+  ▲ Fig.2 Summary of continuous features (Raw test) 
  
  
  
