@@ -1,13 +1,14 @@
 # Data Analysis Using Decision Tree from scratch
-## * Dataset1 : wine data 
-1. Data exploration (overview) 
-•	Data : 1023 instances (train), 244 instances (test) 
-•	Phrase : top phrase “going to a house party and…” 
-•	Target : 5 classes (3, 4, 5, 6, 7, 8) 
-•	The count of each features are not the same 
+## Dataset1 : wine data 
+Data exploration (overview) 
+ •	Data : 1023 instances (train), 244 instances (test) 
+ •	Phrase : top phrase “going to a house party and…” 
+ •	Target : 5 classes (3, 4, 5, 6, 7, 8) 
+ •	The count of each features are not the same 
 1.	Dataset1 may contain duplicated data → cause bias, waste of time 
-2.	Dataset1 may contain missing value → cause bias 
-  
+2.	Dataset1 may contain missing value   → cause bias 
+  ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/e09907b2-2998-4d01-9a32-fd7928be9509)
+
 ▲ Fig.1 Summary of continuous features (Raw train) 
   
 ▲ Fig.2 Summary of continuous features (Raw test) 
