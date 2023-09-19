@@ -1,4 +1,10 @@
 # Data Analysis Using Decision Tree from scratch
+## Introduction
+  This project use Decision Tree to do the <br />
+  1. data analysis <br />
+  2. data visualization <br />
+  on 2 Dataset => wine data & rotten tomatos data
+
 ## Dataset1 : wine data 
 ### Data exploration (overview) <br />
   •	Data : 1023 instances (train), 244 instances (test) <br />
