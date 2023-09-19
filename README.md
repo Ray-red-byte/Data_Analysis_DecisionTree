@@ -5,7 +5,7 @@
   •	Phrase : top phrase “going to a house party and…” <br />
   •	Target : 5 classes (3, 4, 5, 6, 7, 8) <br />
   •	The count of each features are not the same <br />
-  =>	Dataset1 may contain duplicated data → cause bias, waste of time 
+  =>	Dataset1 may contain duplicated data → cause bias, waste of time <br />
   =>	Dataset1 may contain missing value   → cause bias 
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/d9a860bd-442b-4918-8f8c-55726582cdc6)
   ▲ Fig.1 Summary of continuous features (Raw train) 
@@ -21,8 +21,8 @@
 ▲ Fig.4 Class distribution in each features  
  
 ### Data exploration (univariate) <br />
-•The residual_sugar and chlorides have the most outlier 
-  → affect the mean of the data, the variance of data ,then cause error. 
+•The residual_sugar and chlorides have the most outlier <br />
+  → affect the mean of the data, the variance of data ,then cause error. <br />
   
 ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/7d523d5e-0933-47a8-baad-33eda9653a4a)
 ▲ Fig.5 Outliers in each features (boxplot) 
@@ -46,9 +46,9 @@
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/870ff790-5ffd-4853-8235-e1e0bbe3e05e)
 ▲ Fig.9 Summary of continuous features (After imputation,drop duplicated) 
  
-  • Remove the outliers, which are not in   
-1.	Lower : mean – 1.5*std 
-2.	Upper : mean + 1.5*std 
+  • Remove the outliers, which are not in   <br />
+1.	Lower : mean – 1.5*std <br />
+2.	Upper : mean + 1.5*std <br />
    
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/1c3228c6-1272-4bbc-bba0-56df000b3a75)
 ▲ Fig.10 Summary of continuous features(After imputation, drop duplicated, and remove outliers)
