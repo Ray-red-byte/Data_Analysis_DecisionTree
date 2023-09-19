@@ -9,6 +9,7 @@
   =>	Dataset1 may contain missing value   → cause bias 
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/d9a860bd-442b-4918-8f8c-55726582cdc6)
   ▲ Fig.1 Summary of continuous features (Raw train) 
+  
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/5720904b-2be2-4fa2-a103-d579970b7b6d)
   ▲ Fig.2 Summary of continuous features (Raw test) 
  
@@ -17,6 +18,7 @@
 •	The class 5 and 6 dominate data → cause imbalanced data <br />
 ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/ac7429f6-8d72-416e-8d6a-0786529c95ad)
 ▲ Fig.3 Class distribution     
+
 ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/2a4e8494-1e8c-431e-a927-78a35e88dd06)
 ▲ Fig.4 Class distribution in each features  
  
@@ -32,6 +34,7 @@
 •The class and alcohal are the higest correlation, 0.49, there are no features highly   	correlated to target, so put all features training. <br />
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/d4ad0b34-809d-424c-a5c8-b6066ebf5f10)
 ▲ Fig.6 Relationship in each features (scatterplot) 
+
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/6bb309b5-494d-4d4e-bacc-fd54533f9b0d)
 ▲ Fig.7 Relationship in each features (heatmap)  
 
@@ -42,9 +45,8 @@
 2.	After dropping, the missing value ratio among each feaures are all around 5%, it’s 
  	acceptable <br />
   ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/dceafb3d-8c22-4d65-8f80-2836a08b70ac)
-▲ Fig.8 Missing value of features (After drop duplicated) 
-  ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/870ff790-5ffd-4853-8235-e1e0bbe3e05e)
-▲ Fig.9 Summary of continuous features (After imputation,drop duplicated) 
+▲ Fig.8 Missing value of features (After drop duplicated)
+
  
   • Remove the outliers, which are not in   <br />
 1.	Lower : mean – 1.5*std <br />
@@ -60,7 +62,7 @@
  Class 5, 6 are top 2 highest. Need to find another method to classify those two class. <br />
 •	I think the low accuracy is that the data size is small, cause to underestimate. <br />
 •	Two criterion show no difference   <br />
-   1. Entropy (accuracy) = 0.56     2. Gini (accuracy) = 0.56 
+   1. Entropy (accuracy) = 0.56     2. Gini (accuracy) = 0.56 <br />
    ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/f1cb5422-0d5b-400d-8c57-2187aa66f140)
 ▲ Fig.11 Evaluation report of two criterion  
 
