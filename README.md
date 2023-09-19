@@ -57,12 +57,13 @@
 
 ### Evaluation <br />
 •	Stratified sampling <br />
- Since imbalanced target, need to stratified sample based on target <br />
+  Since imbalanced target, need to stratified sample based on target <br />
 •	Calculate f1-score in each class  <br />
- Class 5, 6 are top 2 highest. Need to find another method to classify those two class. <br />
+  Class 5, 6 are top 2 highest. Need to find another method to classify those two class. <br />
 •	I think the low accuracy is that the data size is small, cause to underestimate. <br />
 •	Two criterion show no difference   <br />
-   1. Entropy (accuracy) = 0.56     2. Gini (accuracy) = 0.56 <br />
+   1. Entropy (accuracy) = 0.56 <br />
+   2. 2. Gini (accuracy) = 0.56 <br />
    ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/f1cb5422-0d5b-400d-8c57-2187aa66f140)
 ▲ Fig.11 Evaluation report of two criterion  
 
