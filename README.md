@@ -1,9 +1,11 @@
 # Data Analysis Using Decision Tree from scratch
 ## Introduction
-  This project use Decision Tree to do the <br />
-  1. data analysis <br />
-  2. data visualization <br />
-  on 2 Dataset => wine data & rotten tomatos data
+  This project use Dataset (wine data & rotten tomatos data) and contain 4 parts <br />
+  1. data exploaration <br />
+  2. data cleaning <br />
+  3. data visualization <br />
+  4. train / test / prediction (Decision Tree) <br />
+  
 
 ## Dataset1 : wine data 
 ### Data exploration (overview) <br />
