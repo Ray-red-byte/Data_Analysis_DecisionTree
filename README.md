@@ -65,6 +65,86 @@
    1. Entropy (accuracy) = 0.56 <br />
    2. 2. Gini (accuracy) = 0.56 <br />
    ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/f1cb5422-0d5b-400d-8c57-2187aa66f140)
-▲ Fig.11 Evaluation report of two criterion  
+▲ Fig.11 Evaluation report of two criterion
+
+
+## Dataset2 : Rotten Tomatos reviews
+Data exploration (overview): <br />
+•	Data : 124848 instances (train) <br />
+•	Phrase : top phrase “going to a house party and…” <br />
+•	Sentimental : 5 classes (0, 1, 2, 3, 4) <br />
+  ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/f6b04a83-b0f5-4b87-9a59-8b184178721e)
+  ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/1f3136dc-654d-4186-9a56-7ca5778b1471)
+▲ Fig.12 Summary of phrase data and sentimental outcome(train) 
+ 
+•	Data : 31211 insatnces (train) <br />
+•	Phrase : top phrase “finds a way to make J.K. Rowling’s marvelo…” <br />
+  ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/1f53dc1a-18c0-449b-b3cc-85fb6ddedccc)
+▲ Fig.13 Summary of phrase data and sentimental outcome(test) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Data exploration (class distribution): 
+•	The positive contain the most different length  
+•	The neutral contain the most intensive phrase length 
+  
+▲ Fig.14 Class distribution of different phrase length 
+ 
+•	Class 2 is the largest amount, followed by class 3 
+ → imbalanced data cause bias  
+  
+▲ Fig.15 Class distribution 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Data cleaning  
+•	Remove HTML tags using BeautifulSoup 
+•	Keep only alphabetic characters using a regular expression 
+•	Tokenize the text into individual words 
+•	Remove stopwords (NLTK library) 
+•	Perform lemmatization on the words (NLTK library) 
+→There are 156059 words in the whole dataset2(Train and Test data) 
+ 
+ 
+Data transformation        
+•	Use TF-IDF(term frequency-inverse document frequency) from scikit-learn 
+TfidfVectorizer to give each words a score that how important to documents. 
+•	Set max_features=1000, remain top 1000 important words 
+  
+(picture: https://medium.com/%E6%B7%B1%E6%80%9D%E5%BF%83%E6%80%9D/ml-
+%E7%94%A8%E5%9C%A8nlp-%E7%9A%84-tf-idf-51dac088a79) 
+ 	 
+→ new data rows :instances(156059), columns :words(1000) 
+• Top 50 important words that the total score to all docs are highest 
+  
+▲ Fig.16 Top 50 important words  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Evaluation 
+•	Stratified sampling 
+  Since imbalanced target, need to stratified sample based on target 
+•	Calculate f1-score in each class 
+   	Class 2 (neutral) is highest. Because class 2 dominate the train data, lots of other class                    	prediction are class 2 in confusion matrix 
+•	I think the low accuracy is that only consider importance to documents in eeah words is  	not enough, need to find the relationship in each words and sequences. 
+•	Two criterion show no difference   
+1.	Entropy (accuracy) = 0.51 
+2.	Gini (accuracy) = 0.51 
+   
+▲ Fig.17 Evaluation report of two criterion  
+
 
    
