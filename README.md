@@ -107,6 +107,9 @@
 ### Data transformation  <br />  
 •	Use TF-IDF(term frequency-inverse document frequency) from scikit-learn TfidfVectorizer to give each words a score that how   
   important to documents. <br />
+  ![image](https://github.com/Ray-red-byte/Data_Analysis_DecisionTree/assets/72739609/fb2e6916-3218-44de-ba67-af2c500b0c95)
+  (picture: https://medium.com/%E6%B7%B1%E6%80%9D%E5%BF%83%E6%80%9D/ml-
+%E7%94%A8%E5%9C%A8nlp-%E7%9A%84-tf-idf-51dac088a79) <br />
 •	Set max_features=1000, remain top 1000 important words <br />
 → new data rows :instances(156059), columns :words(1000) <br />
 • Top 50 important words that the total score to all docs are highest <br />
