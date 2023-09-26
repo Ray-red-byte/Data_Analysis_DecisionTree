@@ -1,6 +1,7 @@
 # Data Analysis Using Decision Tree from scratch
 ## Introduction
-  This project use Dataset (wine data & rotten tomatos data) and contain 4 parts <br />
+  This project use Dataset (wine data & rotten tomatos data), but these datasets are imbalanced data and missing value.
+  As a result, contain 4 parts to improve f1-score <br />
   1. data exploaration <br />
   2. data cleaning <br />
   3. data visualization <br />
